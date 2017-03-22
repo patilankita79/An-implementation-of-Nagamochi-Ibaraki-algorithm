@@ -1,1 +1,11 @@
 # An-implementation-of-Nagamochi-Ibaraki-algorithm
+
+The subject of this project is to create an implementation of the NagamochiIbaraki algorithmfor finding a minimum cut in an undirected graph, and experiment with it.
+Tasks:
+1.	Explain how your implementation of the algorithm works. Provide pseudo code for the description, with sufficient comments to make it readable and understandable by a human.
+2.	Write a computer program that implements the algorithm. You mayuse any programming language under any operating system, this is entirely of your choice.
+3.	Run the program on randomly generated examples. Let the numberof nodes be fixed at n = 21, while the number m of edges will vary between 20 and 200, in steps of 4. For any such value of m, the program creates 5 graphs with n = 21 nodes and m edges. The actual edges are selected randomly. Parallel edges and self-loops are not allowed in the original graph generation. Note, however, that the Nagamochi-Ibaraki algorithm allows parallel edges in its internal working, as they may arise due to the merging of nodes.
+4.	Experiment with your random graph examples to find an experimentalconnection between the number of edges in the graph and its connectivity λ(G). (If the graph happens to be disconnected, then take λ(G) = 0.) Show the found relationship graphically in a diagram, exhibiting λ(G) as a function of m, while keeping n = 21 fixed. Since the edges are selected randomly, therefore, we reduce the effect of randomness in the following way: run 5 independent experiments for every value of m, one with each generated example for this m, and average out the results. (This is why 5 graphs were created for every m.)
+5.	For every connectivity value λ = λ(G) that occurred in the experiments, record the largest and smallest number of edges with which this
+λ value occurred. Let us call their difference the stability of λ, and let us denote it by s(λ). Show in a diagram how s(λ) depends on λ, based on your experiments.
+6.	Give a short explanation why the functions found in items 4 and 5 lookthe way they look. In other words, try to argue that they indeed show the behavior that can be intuitively expected, so your program is likely to work correctly. Note that it is part of your task to find out what behavior can be expected.
